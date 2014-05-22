@@ -47,6 +47,7 @@ func main() {
 
 	// assets – no asset pipeline :(
 	n.Use(negroni.NewStatic(http.Dir("assets")))
+	n.Use(Auth)
 
 	// router goes last
 	n.UseHandler(r)
