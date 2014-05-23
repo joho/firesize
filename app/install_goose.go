@@ -1,5 +1,5 @@
 // +build heroku
 
-package main
+package app
 
 import _ "bitbucket.org/liamstask/goose/cmd/goose"
